@@ -2,6 +2,18 @@
 
 Please enjoy
 
+### Dependencies
+
+- A POSIX shell
+- GNU CC
+- A $HOME directory
+
+### Installation
+
+`./.make.sh`
+
+# List of dotfiles
+
 [Ï](./Ï)
 
 [⍨](./⍨)
