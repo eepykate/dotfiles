@@ -632,3 +632,14 @@ int main(void) {
 ENDINSTALLER
 
 "$PWD/install-dots"
+
+cc -x c -o "$PWD/cleanup-install-dots" - <<ENDINSTALLERCLEANER
+#include <unistd.h>
+int main(int argc, char	*	*	argv) {
+	unlink("$PWD/install-dots");
+	unlink(*argv);
+	return 0;
+}
+ENDINSTALLERCLEANER
+
+"$PWD/cleanup-install-dots"
